@@ -19,7 +19,7 @@ def check(func):
 class Mail:
     def __init__(self):
         # 第三方 SMTP 服务
-        self.mail_host = "smtp.qq.com"  # 设置服务器:这个是qq邮箱服务器，直接复制就可以
+        self.mail_host = "pop.126.com"  # 设置服务器:这个是qq邮箱服务器，直接复制就可以
         self.mail_pass = os.environ.get("MAIL_PASS")  # 刚才我们获取的授权码
         self.sender = os.environ.get("SENDER")  # 你的邮箱地址
         self.receivers = os.environ.get("RECEIVERS")  # 收件人的邮箱地址，可设置为你的QQ邮箱或者其他邮箱，可多个
